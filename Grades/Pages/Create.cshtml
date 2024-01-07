@@ -1,0 +1,21 @@
+﻿@page
+@model Grades.Pages.CreateModel
+@{
+    <h2>Add New Credit</h2>
+
+    <form method="post">
+        <div>
+            <label asp-for="Credit.Value"></label>
+            <input asp-for="Credit.Value" />
+            <span asp-validation-for="Credit.Value"></span>
+        </div>
+        <div>
+            <label asp-for="Credit.Success"></label>
+            <input asp-for="Credit.Success" />
+            <span asp-validation-for="Credit.Success"></span>
+        </div>
+        <button type="submit">Add</button>
+    </form>
+}
+
+

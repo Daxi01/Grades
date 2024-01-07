@@ -1,0 +1,29 @@
+﻿@page
+@model Grades.Pages.ListModel
+@{
+}
+
+
+<h2>Credits</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Created</th>
+            <th>Value</th>
+            <th>Success</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Credits)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Created</td>
+                <td>@item.Value</td>
+                <td>@item.Success</td>
+            </tr>
+        }
+    </tbody>
+</table>
